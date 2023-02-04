@@ -116,21 +116,21 @@
     simplyCountdown = function (elt, args) {
         var parameters = extend({
                 year: 2023,
-                month: 7,
-                day: 14,
+                month: 12,
+                day: 12,
                 hours: 0,
                 minutes: 0,
                 seconds: 0,
                 words: {
-                    days: 'day',
-                    hours: 'hour',
+                    days: 'jour',
+                    hours: 'heure',
                     minutes: 'minute',
-                    seconds: 'second',
+                    seconds: 'seconde',
                     pluralLetter: 's'
                 },
                 plural: true,
                 inline: false,
-                enableUtc: true,
+                enableUtc: false,
                 onEnd: function () {
                     return;
                 },
@@ -152,6 +152,10 @@
             minutes,
             seconds,
             cd = document.querySelectorAll(elt);
+
+        parameters.year = 2023;
+        parameters.month = 7;
+        parameters.day = 14;
 
         targetTmpDate = new Date(
             parameters.year,
