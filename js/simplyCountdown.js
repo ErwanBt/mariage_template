@@ -154,8 +154,8 @@
             cd = document.querySelectorAll(elt);
 
         parameters.year = 2023;
-        parameters.month = 7;
-        parameters.day = 14;
+        parameters.month = 8;
+        parameters.day = 26;
 
         targetTmpDate = new Date(
             parameters.year,
